@@ -45,22 +45,22 @@ header ul li{
     color: white;
     list-style-type: none;
     font-size: 1.5rem;
-    padding: 0.5em;
+    padding: 0.5em 0.5em 0em 0.5em;
     margin: 0px;
     cursor: pointer;
     margin: auto 0.5em;
 }
 header .links li:hover,
 header .links li:focus{
-    background-color: rgba(255, 255, 255, 0.8);
-    color: rgb(19, 18, 18);
-    transition: 0.2s ease;
+    color: rgb(255, 255, 255);
+    transition: 0.5s ease;
     border-radius: 2px;
     font-weight: bold;
-    transform: scale(1.05);
+    border-bottom: 4px solid rgb(237, 141, 250);
+    animation: left-grow 0.5s;
 }
 .underlined{
-    border-bottom: 4px solid plum;
+    border-bottom: 4px solid rgb(230, 64, 230);
     border-radius: 30% 0%;
 }
 .main{
@@ -112,6 +112,14 @@ header .links li:focus{
     padding: 10px;
     margin: 10px;
     border-style: double;
+}
+.about h2{
+    background-color: rgb(241, 185, 239);
+    animation: grow 1.5s;
+    height: 2.5rem;
+    padding-left: 10px;
+    overflow: hidden;
+    border-radius: 20px 0px 20px 0px;
 }
 .projects .project img{
     width: 100%;
@@ -277,4 +285,20 @@ footer p{
   
   ::-webkit-scrollbar-thumb:hover {
     background: #131212; 
+  }
+  @keyframes left-grow{
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 60%;
+      }
+  }
+  @keyframes grow{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
   }

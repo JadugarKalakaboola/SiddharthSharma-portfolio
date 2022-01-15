@@ -244,6 +244,8 @@ footer p{
         flex-direction: column;
     }
     header ul{
+        display: flex;
+        flex-wrap: wrap;
         margin: 0px;
         font-size: 0.8rem;
     }

@@ -238,7 +238,7 @@ footer p{
 }
 @media screen and (max-width: 900px){
     img{
-        width: 100% !important;
+        width: 100%;
     }
     .home h1{
         margin: 0px;

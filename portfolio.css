@@ -11,12 +11,21 @@ body{
 }
 
 h1{
-    font-size: 60px;
+    font-size: 80px;
     font-family: 'Bebas Neue', cursive;
 }
 h2{
-    font-size: 40px;
+    font-size: 60px;
     font-family: 'Indie Flower', cursive;
+}
+.main{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+img{
+    border-radius: 5px;
 }
 header{
     background-color: #9921e8;
@@ -24,10 +33,13 @@ header{
     display: flex;
     justify-content: space-between;
     border-radius: 0px 0px 25px 25px;
+    padding-right: 20px;
 }
-img{
-    width: 100%;
+.theme-btn{
+    width: 30px;
+    cursor: pointer;
 }
+
 header ul{
     padding: 20px;
 }
@@ -51,7 +63,8 @@ header ul li{
     margin: auto 0.5em;
 }
 header .links li:hover,
-header .links li:focus{
+header .links li:focus,
+header .links li:active{
     color: rgb(255, 255, 255);
     transition: 0.5s ease;
     border-radius: 2px;
@@ -60,15 +73,10 @@ header .links li:focus{
     animation: left-grow 0.5s;
 }
 .underlined{
-    border-bottom: 4px solid rgb(230, 64, 230);
+    border-bottom: 4px solid rgb(224, 122, 224);
     border-radius: 30% 0%;
 }
-.main{
-    max-width: 980px;
-    width: 95%;
-    margin: 0 auto;
-    text-align: center;
-}
+
 .about{
     padding: 150px 1em;
     display: flex;
@@ -86,7 +94,12 @@ header .links li:focus{
     margin-top: 2em;
 }
 .about img{
-    max-width: 400px;
+    max-width: 600px;
+}
+.about h1{
+    animation: grow-left 2s;
+    height: 1.5em;
+    overflow: hidden;
 }
 .skill-section{
     text-align: center;
@@ -100,8 +113,7 @@ header .links li:focus{
     margin: auto 20px;
 }
 .skill-section img{
-    max-width: 200px;
-    max-height: 300px;
+    max-width: 500px;
     
 }
 .tech-skills{
@@ -113,20 +125,13 @@ header .links li:focus{
     margin: 10px;
     border-style: double;
 }
-.about h2{
-    background-color: rgb(241, 185, 239);
-    animation: grow 1.5s;
-    height: 2.5rem;
-    padding-left: 10px;
-    overflow: hidden;
-    border-radius: 20px 0px 20px 0px;
-}
+
 .projects .project img{
     width: 100%;
     height: 20%;
 }
 .project-section img{
-    width: 100px;
+    width: 200px;
     margin-right: 50px;
     margin: 0px auto;
 }
@@ -195,7 +200,7 @@ footer{
     margin: 5px;
     background-color: #485461;
     margin: 0px;
-    padding: 10px;
+    padding: 30px 10px;
     background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 }
 .external-links{
@@ -222,11 +227,14 @@ footer p{
 .email:hover{
     fill:  rgb(241, 82, 8);
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
     header{
         width: 100%;
         display: flex;
         flex-direction: column;
+    }
+    header ul{
+        margin: 0px auto;
     }
     .about{
         display: flex;
@@ -279,12 +287,12 @@ footer p{
   }
    
   ::-webkit-scrollbar-thumb {
-    background: rgb(56, 56, 56); 
+    background: rgb(117, 116, 116); 
     border-radius: 10px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #131212; 
+    background: #777676; 
   }
   @keyframes left-grow{
       0%{
@@ -294,7 +302,7 @@ footer p{
           width: 60%;
       }
   }
-  @keyframes grow{
+  @keyframes grow-left{
     0%{
         width: 0%;
     }
@@ -302,3 +310,16 @@ footer p{
         width: 100%;
     }
   }
+.dark{
+    background-color :#000000;
+    background-image :linear-gradient(315deg, #000000 0%, #4f5353 80%);
+    color: rgb(175, 175, 174);
+}
+.dark-gradient{
+    background-color: #5b6467;
+    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+    color: var(--black);
+}
+.light-text {
+    color: rgb(255, 255, 255) !important;
+}

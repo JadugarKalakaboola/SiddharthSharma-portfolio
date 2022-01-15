@@ -245,6 +245,7 @@ footer p{
     }
     header ul{
         margin: 2px;
+        font-size: 0.8rem;
     }
     header ul li{
         margin: 0.2em;

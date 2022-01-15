@@ -229,6 +229,9 @@ footer p{
     fill:  rgb(241, 82, 8);
 }
 @media screen and (max-width: 1000px){
+    img{
+        width: 100%;
+    }
     header{
         width: 100%;
         display: flex;
@@ -275,7 +278,8 @@ footer p{
         flex-direction: column;
     }
     .project img{
-        width: 100px;
+        width: 80%;
+        height: 20%;
     }
 }
 ::-webkit-scrollbar {

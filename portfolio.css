@@ -48,9 +48,10 @@ header .links{
     display: flex;
 }
 #name{
-    font-size: 2rem;
+    font-size: 3rem;
     cursor: default;
     margin: 0px;
+    padding: 0px;
     font-family: 'Mochiy Pop P One', sans-serif;
 }
 header ul li{

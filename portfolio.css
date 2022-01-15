@@ -98,6 +98,7 @@ header .links li:active{
 }
 .home img{
     width: 600px;
+    max-width: 100%;
 }
 .about{
     padding: 100px 0px;
@@ -237,7 +238,7 @@ footer p{
 }
 @media screen and (max-width: 900px){
     img{
-        width: 100%;
+        width: 100% !important;
     }
     .home h1{
         margin: 0px;

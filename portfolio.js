@@ -83,3 +83,50 @@ homeBtn.addEventListener("click", function(){
     projectBtn.textContent = "Project"
     contactBtn.textContent = "Contact"
 })
+
+const projectArr = [
+    {
+        name: "Calculator",
+        content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis dignissimos tempora eos fugit earum, modi molestiae dicta, soluta deleniti vitae nostrum laborum, recusandae eveniet accusamus ea? Non sed architecto magnam.",
+        skills: "HTML CSS Javascript",
+        url : "images/temp.jpg"
+    },
+    {
+        name: "Stone Paper Scissors",
+        content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis dignissimos tempora eos fugit earum, modi molestiae dicta, soluta deleniti vitae nostrum laborum, recusandae eveniet accusamus ea? Non sed architecto magnam.",
+        skills: "HTML CSS Javascript",
+        url : "images/spsGame.jpg"
+    },
+    {
+        name: "Retro Snake Game",
+        content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis dignissimos tempora eos fugit earum, modi molestiae dicta, soluta deleniti vitae nostrum laborum, recusandae eveniet accusamus ea? Non sed architecto magnam.",
+        skills: "HTML CSS Javascript",
+        url : "images/snakeGame.jpg"
+    },
+    {
+        name: "Javascriptmas",
+        content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis dignissimos tempora eos fugit earum, modi molestiae dicta, soluta deleniti vitae nostrum laborum, recusandae eveniet accusamus ea? Non sed architecto magnam.",
+        skills: "HTML CSS Javascript",
+        url : "images/javascriptmas.jpg"
+    }
+]
+const slideImg = document.getElementById("slide-image")
+const slideName = document.getElementById("slide-name")
+const slideContent = document.getElementById("slide-text")
+const slideSpans = document.getElementById("spans")
+let delay = 3000
+let i = 0;
+function startCarousel(){
+    if (i === projectArr.length){
+        i = 0
+    } else{
+        slideImg.src = `${projectArr[i].url}`
+        slideName.textContent = `${projectArr[i].name}`
+        slideSpans.textContent = `${projectArr[i].skills}`
+        slideContent.textContent = `${projectArr[i].content}`
+        console.log(i)
+        i++
+    }
+}
+startCarousel()
+setInterval(function(){startCarousel()},3000);

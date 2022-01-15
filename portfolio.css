@@ -232,6 +232,9 @@ footer p{
     img{
         width: 100%;
     }
+    #name{
+        height: auto;
+    }
     header{
         width: 100%;
         display: flex;

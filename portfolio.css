@@ -246,7 +246,7 @@ footer p{
     header ul{
         display: flex;
         flex-wrap: wrap;
-        margin: 0px;
+        margin: 0px auto;
         font-size: 0.8rem;
     }
     header ul li{

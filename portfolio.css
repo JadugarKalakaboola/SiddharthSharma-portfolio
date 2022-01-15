@@ -238,7 +238,10 @@ footer p{
         flex-direction: column;
     }
     header ul{
-        margin: 0px auto;
+        margin: 2%;
+    }
+    header ul li{
+        margin: 0.2em;
     }
     .about{
         display: flex;

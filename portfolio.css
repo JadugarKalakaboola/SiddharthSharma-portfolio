@@ -294,6 +294,9 @@ footer p{
         width: 80%;
         height: 20%;
     }
+    ::-webkit-scrollbar {
+        width: 5px;
+      }
 }
 ::-webkit-scrollbar {
     width: 15px;

@@ -96,7 +96,7 @@ header .links li:active{
 .home p{
     margin-top: 2em;
 }
-.home img{
+.home .content img{
     width: 600px;
     max-width: 100%;
 }

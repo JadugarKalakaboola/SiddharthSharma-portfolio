@@ -247,6 +247,7 @@ footer p{
         display: flex;
         flex-wrap: wrap;
         margin: 0px auto;
+        justify-content: center;
         font-size: 0.8rem;
     }
     header ul li{

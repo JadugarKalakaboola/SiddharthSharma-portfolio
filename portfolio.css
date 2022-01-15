@@ -232,7 +232,7 @@ footer p{
     img{
         width: 100%;
     }
-    #name{
+    .about h1{
         height: auto;
     }
     header{

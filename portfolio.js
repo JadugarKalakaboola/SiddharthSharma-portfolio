@@ -8,6 +8,7 @@ const projectSection = document.querySelector(".project-carousel")
 const contactSection = document.querySelector(".contact-section")
 const homeSection = document.querySelector(".home-section")
 const slideDarkContent = document.querySelector(".slide-content")
+console.log(slideDarkContent)
 function addDarkMode(){
     document.body.classList.add("dark")
     for(let i=1;i <= 9; i++){
@@ -128,7 +129,6 @@ function startCarousel(){
         slideName.textContent = `${projectArr[i].name}`
         slideSpans.textContent = `${projectArr[i].skills}`
         slideContent.textContent = `${projectArr[i].content}`
-        console.log(i)
         i++
     }
 }

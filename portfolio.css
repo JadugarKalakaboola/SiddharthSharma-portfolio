@@ -46,6 +46,7 @@ header ul{
 
 header .links{
     display: flex;
+    margin-right: 40px;
 }
 #name{
     font-size: 3rem;
@@ -134,12 +135,7 @@ header .links li:active{
 
 .projects .project img{
     width: 100%;
-    height: 20%;
-}
-.project-section img{
-    width: 200px;
-    margin-right: 50px;
-    margin: 0px auto;
+    height: 50%;
 }
 .project-section{
     text-align: center;
@@ -149,23 +145,20 @@ header .links li:active{
 .projects{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 .project{
     border-radius: 4px;
-    width: 18%;
+    width: auto;
+    height: auto;
     margin: 10px;
     margin-top: 40px;
-    padding: 1em 1em 0em 1em;
+    padding: 2em;
     background-color: #f9c5d1;
-    background-image: linear-gradient(135deg, #f9c5d1 0%, #9795ef 74%);
-    
 }
 
 .skills{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 1em;
     cursor: default;
 }
 .skills p{
@@ -176,7 +169,7 @@ header .links li:active{
 }
 .project a{
     text-decoration: none;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: white;
     padding: 5px 0px;
     font-weight: bolder;
@@ -238,10 +231,9 @@ footer{
     flex-direction: column;
     justify-content: center;
     margin: 5px;
-    background-color: #485461;
+    background-color: #21213a;
     margin: 0px;
     padding: 30px 10px;
-    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 }
 .external-links{
     display: flex;
@@ -249,7 +241,7 @@ footer{
 }
 footer li{
     list-style-type: none;
-    width: 50px;
+    width: 50px
 }
 footer p{
     font-size: 1rem;
@@ -257,15 +249,19 @@ footer p{
 }
 .github:hover{
     fill: purple;
+    transition: 0.3s ease-in;
 }
 .twitter:hover{
     fill: rgb(84, 147, 230);
+    transition: 0.3s ease-in;
 }
 .instagram:hover{
     fill: rgb(209, 29, 164);
+    transition: 0.3s ease-in;
 }
 .email:hover{
     fill:  rgb(241, 82, 8);
+    transition: 0.3s ease-in;
 }
 @media screen and (max-width: 900px){
     img{
@@ -379,9 +375,10 @@ footer p{
     background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
     color: var(--black);
 }
-.dark-carousel .content{
+.dark-carousel{
     color: seashell;
 }
+
 .light-text {
     color: rgb(255, 255, 255) !important;
 }
